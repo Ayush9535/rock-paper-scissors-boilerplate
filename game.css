@@ -54,6 +54,7 @@ button{
 }
 
 #result{
+    display: none;
     margin-top: 30px;
 }
 

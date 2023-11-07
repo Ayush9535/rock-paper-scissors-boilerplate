@@ -10,6 +10,7 @@ const rockbtn = document.getElementById("rock")
 const paperbtn = document.getElementById("paper")
 const scissorbtn = document.getElementById("scissor")
 const winner = document.getElementById("winner")
+const result = document.getElementById("result")
 
 let ScoreUser = 0;
 let ScoreComp = 0;
@@ -84,11 +85,13 @@ function updateScore(ScoreComp , ScoreUser){
 function checkWinner(){
     if (ScoreUser === 5){
         winner.innerHTML = "You"
+        result.style.display = "block"
         location.href = "#result"
         console.log("a")
     }else if(ScoreComp === 5){
         winner.innerHTML = "Computer"
         console.log("a")
+        result.style.display = "block"
         location.href = "#result"
 
     }
